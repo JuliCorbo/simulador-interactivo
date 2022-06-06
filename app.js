@@ -30,7 +30,7 @@ if (tomaDePedido == "Si" || tomaDePedido == "si")  {
         let resultado = multiplicar(cantidad,valorCajon)
     alert( "el total de su compra es: $" + resultado)
 
-    const pagoTarjeta = Number(1.15)
+    let pagoTarjeta =(1.15)
 
     function recargo (resultado, pagoTarjeta){
 
@@ -40,9 +40,9 @@ if (tomaDePedido == "Si" || tomaDePedido == "si")  {
     
     let formaDePago = prompt ("ingrese el metodo de pago deseado, recuerde que si abona con tarjeta, se le generara un recargo del 15 %, para efectivo ingrese efectivo y para tarjeta ingrese tarjeta")
 
-    if(formaDePago  == "efectivo" || "Efectivo"){
+    if (formaDePago  == "efectivo" || formaDePago == "Efectivo") {
         alert("se le enviara el pedido a la brevedad, el total es: $" + resultado)
-    }else{
+    } else {
         
         let precioFinal = recargo(resultado,pagoTarjeta)
 
